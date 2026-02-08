@@ -36,7 +36,9 @@ export default defineConfig([
       'import-x/first': 'error',
       'import-x/newline-after-import': 'error',
       'import-x/no-duplicates': 'error',
+      'no-redeclare': 'off',
       'prettier/prettier': 'error',
+      '@typescript-eslint/no-redeclare': 'error',
     },
   },
   {
