@@ -1,6 +1,6 @@
 {
   "name": "@revensky/primitives",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Enhanced primitives functionalities for NodeJS.",
   "license": "MIT",
   "homepage": "https://github.com/revensky/primitives#readme",
@@ -12,8 +12,7 @@
     "build": "pnpm exec tsc -p tsconfig.build.json",
     "prepare": "pnpm exec husky",
     "test": "pnpm exec jest",
-    "release": "pnpm pack --pack-destination release",
-    "publish": "pnpm run build && pnpm run release && pnpm publish --access public",
+    "release": "pnpm run build && pnpm pack --pack-destination release && pnpm publish --access public",
     "postpublish": "rm -rf dist release"
   },
   "bugs": {
